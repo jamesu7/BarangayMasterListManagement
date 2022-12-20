@@ -1,7 +1,7 @@
 
 # Barangay Voters Management
 
-A simple Xamarin app which barangay officials can use to manage registered voters of their barangay.
+A simple Xamarin app which can use by  barangay officials to manage all the registered voters of their barangay.
 
 
 
