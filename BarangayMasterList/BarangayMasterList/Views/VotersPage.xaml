@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BarangayMasterList.Views.VotersPage"
+             xmlns:local="clr-namespace:BarangayMasterList.ViewModels"
+             xmlns:models="clr-namespace:BarangayMasterList.Models"
+             Title="Master's List">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Member" Command="{Binding AddVoterCommand}"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <RefreshView x:DataType="local:VotersViewModel" Command="{Binding LoadVoterCommand}" IsRefreshing="{Binding IsBusy,Mode=TwoWay}">
+      <CollectionView ItemsSource="{Binding VoterInfos}" SelectionMode="None">
+                    <CollectionView.EmptyView HorizontalOptions="Center" VerticalOptions="Center">
+                        <StackLayout>
+                        <Label Text="No Data Found" FontSize="Large" TextColor="Gray" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </CollectionView.EmptyView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                            <StackLayout x:DataType="models:Voter">
+                                <SwipeView>
+                                    <SwipeView.RightItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Delete" BackgroundColor="OrangeRed"
+                                                        Command="{Binding Source={RelativeSource AncestorType={x:Type local:VotersViewModel}},
+                                                                              Path=VoterTappedDelete }" CommandParameter="{Binding .}"/>
+                                            <SwipeItem Text="Close" BackgroundColor="Green" IsDestructive="True"/>
+                                        </SwipeItems>
+                                    </SwipeView.RightItems>
+                                
+                                <Grid Padding="5">
+                                    <Frame CornerRadius="10" HasShadow="True">
+                                <StackLayout Orientation="Horizontal">
+                                            <StackLayout>
+                                                <Label Grid.Column="0" Text="{Binding Name}" VerticalOptions="End"/>
+                                                <Label Grid.Row="1" Text="{Binding Gender}" VerticalOptions="End"/>
+                                                    <Grid Grid.Row="2" Grid.RowSpan="2">
+                                                        <Label  Grid.Column="0" Text="Precint No:" VerticalOptions="End"/>
+                                                        <Label  Grid.Column="1" Text="{Binding PrecintNum}" VerticalOptions="End"/>
+                                                    </Grid>
+                                                </StackLayout>
+                                            <StackLayout HorizontalOptions="EndAndExpand">
+                                                <Image Source="edit.png" WidthRequest="30" HeightRequest="30" VerticalOptions="End">
+                                                    <Image.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1"
+                                                                              Command="{Binding Source={RelativeSource AncestorType={x:Type local:VotersViewModel}},
+                                                                              Path=VoterTappedEdit }" CommandParameter="{Binding .}"/>
+
+
+                                                    </Image.GestureRecognizers>
+                                                </Image>
+                                            </StackLayout>
+                                     </StackLayout>
+                                    </Frame>
+                                </Grid>
+                                </SwipeView>
+                            </StackLayout>
+                        </DataTemplate>
+            </CollectionView.ItemTemplate>
+                    <CollectionView.Header  VerticalOptions="Center" HorizontalOptions="Center">
+                        <StackLayout>
+       
+                        <Label Text="Master's List" FontSize="Large" TextColor="Gray" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </StackLayout>
+        </CollectionView.Header>
+                    <CollectionView.Footer>
+                        <StackLayout>
+                        <!--<Label Text="Load More..." FontSize="Medium" TextColor="Gray" HorizontalOptions="Center"/>-->
+                        <Button Text="Clear" Command="{Binding ClearVoterCommand}" 
+                                FontSize="Medium" TextColor="Gray" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </CollectionView.Footer>
+      </CollectionView>
+            </RefreshView>
+        </StackLayout>
+    </ContentPage.Content>
+    
+    
+</ContentPage>
