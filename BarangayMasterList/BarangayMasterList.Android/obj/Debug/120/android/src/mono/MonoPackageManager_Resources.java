@@ -3,6 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "BarangayMasterList.Android.dll" comes first in this list. */
 		"BarangayMasterList.Android.dll",
+		"Acr.UserDialogs.dll",
+		"AndHUD.dll",
 		"BarangayMasterList.dll",
 		"FormsViewGroup.dll",
 		"SQLite-net.dll",

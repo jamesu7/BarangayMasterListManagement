@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "MonoAndroid,Version=v12.0": {
+    "MonoAndroid,Version=v13.0": {
       "Acr.UserDialogs/7.1.0.466": {
         "type": "package",
         "dependencies": {
@@ -3729,7 +3729,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "MonoAndroid,Version=v12.0": [
+    "MonoAndroid,Version=v13.0": [
       "Acr.UserDialogs >= 7.1.0.466",
       "BarangayMasterList >= 1.0.0",
       "Xamarin.Essentials >= 1.7.0",
@@ -3763,7 +3763,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "monoandroid12.0"
+        "monoandroid13.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -3773,7 +3773,7 @@
         "https://nuget.telerik.com/nuget": {}
       },
       "frameworks": {
-        "monoandroid12.0": {
+        "monoandroid13.0": {
           "projectReferences": {
             "C:\\Users\\wallory.james.cambe\\source\\repos\\BarangayMasterList\\BarangayMasterList\\BarangayMasterList\\BarangayMasterList.csproj": {
               "projectPath": "C:\\Users\\wallory.james.cambe\\source\\repos\\BarangayMasterList\\BarangayMasterList\\BarangayMasterList\\BarangayMasterList.csproj"
@@ -3783,7 +3783,7 @@
       }
     },
     "frameworks": {
-      "monoandroid12.0": {
+      "monoandroid13.0": {
         "dependencies": {
           "Acr.UserDialogs": {
             "target": "Package",

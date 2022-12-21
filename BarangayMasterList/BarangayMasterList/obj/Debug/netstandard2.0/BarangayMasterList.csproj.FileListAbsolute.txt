@@ -7,10 +7,7 @@ C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\
 C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\Views\AddVoterPage.xaml.g.cs
-C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
-C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\Views\VotersPage.xaml.g.cs
 C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\BarangayMasterList.AssemblyInfoInputs.cache
 C:\Users\wallory.james.cambe\source\repos\BarangayMasterList\BarangayMasterList\BarangayMasterList\obj\Debug\netstandard2.0\BarangayMasterList.AssemblyInfo.cs

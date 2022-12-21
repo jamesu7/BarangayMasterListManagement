@@ -15,7 +15,7 @@
       <action android:name="android.media.browse.MediaBrowserService" />
     </intent>
   </queries>
-  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/sblogo" android:label="BarangayMasterList.Android" android:theme="@style/MainTheme">
+  <application android:name="android.app.Application" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/sblogo" android:label="BarangayMasterList.Android" android:theme="@style/MainTheme">
     <activity android:name="crc64651a3157af1ff9ac.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/sblogo" android:label="Barangay MasterList" android:theme="@style/MainTheme" />
     <activity android:name="crc64651a3157af1ff9ac.SplashActivity" android:exported="true" android:icon="@mipmap/sblogo" android:label="Barangay MasterList" android:noHistory="true" android:theme="@style/MyTheme.Splash">
       <intent-filter>
